@@ -24,8 +24,7 @@ public class ClienteS {
     }
 
     public void atualizarCliente(int id, String nome, String email, String telefone) throws InterruptedException {
-        // Note que o método wait é chamado na instância do ClienteS, o que é incomum.
-        // Provavelmente você queria chamar o método wait na thread atual, não no ClienteS.
+        
         String senha = null;
         ClienteS cliente = new ClienteS();
         cliente.wait(id);
